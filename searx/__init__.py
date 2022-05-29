@@ -33,7 +33,7 @@ try:
     ON_HEROKU = environ.get('ON_HEROKU')
 
     if ON_HEROKU:    
-        port = int(os.environ.get('PORT', 5000))  # as per OP comments default is 17995
+        port = int(environ.get('PORT', 5000))  # as per OP comments default is 17995
         settings['server']['port']= port
 except SearxSettingsException as e:
     logger = logging.getLogger('searx')
