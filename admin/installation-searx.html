@@ -232,8 +232,8 @@ $ sudo -H sed -i -e <span class="s2">&quot;s/{instance_name}/searx@</span><span 
     <span class="nt">prefer_configured_language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span> <span class="c1"># increase weight of results in confiugred language in ranking</span>
 
 <span class="nt">server</span><span class="p">:</span>
-    <span class="nt">port </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">8888</span>
-    <span class="nt">bind_address </span><span class="p">:</span> <span class="s">&quot;127.0.0.1&quot;</span> <span class="c1"># address to listen on</span>
+    <span class="nt">port </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5000</span>
+    <span class="nt">bind_address </span><span class="p">:</span> <span class="s">&quot;0.0.0.0&quot;</span> <span class="c1"># address to listen on</span>
     <span class="nt">secret_key </span><span class="p">:</span> <span class="s">&quot;ultrasecretkey&quot;</span> <span class="c1"># change this!</span>
     <span class="nt">base_url </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span> <span class="c1"># Set custom base_url. Possible values: False or &quot;https://your.custom.host/location/&quot;</span>
     <span class="nt">image_proxy </span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span> <span class="c1"># Proxying image results through searx</span>
